@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:gravity="center"
+            android:id="@+id/textview_whatweek"
+            android:background="@drawable/day_drawable"
+            android:layout_width="50dp"
+            android:text="第？周"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_monday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_tuesday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_wednesday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_thursday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_firday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_saturday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/day_drawable"
+            android:gravity="center"
+            android:text="@string/string_sunday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/t_drawable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/string_first"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/class1_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class2_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class3_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class4_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class5_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class6_1"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:id="@+id/class7_1"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/t_drawable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/string_second"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/class1_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class2_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class3_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class4_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class5_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class6_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class7_2"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/t_drawable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/string_third"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/class1_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class2_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class3_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class4_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class5_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class6_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class7_3"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/t_drawable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/string_fourth"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/class1_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class2_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class3_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class4_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class5_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class6_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class7_4"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:background="@drawable/t_drawable"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/string_fifth"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/class1_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class2_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class3_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class4_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class5_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class6_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/class7_5"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="12sp"
+            android:background="@drawable/classm_drawable"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

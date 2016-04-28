@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgroundsetting"
+    android:layout_height="match_parent">
+<TextView
+    android:textColor="@color/colorTitleWhite"
+    android:textSize="35sp"
+    android:background="@color/colorBackGreen"
+    android:gravity="center"
+    android:text="@string/default_setting"
+    android:id="@+id/textview_settingweek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorTitleWhite"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:background="@color/colorYellow"
+        android:text="修改为第"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+<EditText
+    android:hint="这里输入"
+    android:textSize="35sp"
+    android:inputType="number"
+    android:textColor="@color/colorTitleWhite"
+    android:background="@color/colorPurple"
+    android:id="@+id/edittext_week"
+    android:singleLine="true"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content" />
+</LinearLayout>
+    <Button
+        android:textColor="@color/colorTitleWhite"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_settingsubmit"
+        android:textSize="30sp"
+            android:text="@string/string_setting_submit"
+        android:background="@color/colorTitleBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

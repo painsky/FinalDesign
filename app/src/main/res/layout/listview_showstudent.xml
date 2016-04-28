@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorstudentgreen"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textview_studentnumber"
+        android:textColor="@color/colorTitleWhite"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_studentname"
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_studentclass"
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_studentlater"
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_studentanswer"
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

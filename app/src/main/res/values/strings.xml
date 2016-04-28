@@ -1,0 +1,29 @@
+<resources>
+    <string name="default_setting">目前未设置当前周</string>
+    <string name="app_name">教师课程表</string>
+    <string name="string_setting_submit">提交</string>
+    <string name="string_title">  教师版课程表</string>
+    <string name="string_addtitle">添加课程</string>
+    <string name="string_settitle">修改当前周</string>
+    <string name="string_bindtitle">绑定课程</string>
+    <string name="string_first">第一节</string>
+    <string name="string_second">第二节</string>
+    <string name="string_third">第三节</string>
+    <string name="string_fourth">第四节</string>
+    <string name="string_fifth">第五节</string>
+    <string name="string_monday">星期一</string>
+    <string name="string_tuesday">星期二</string>
+    <string name="string_wednesday">星期三</string>
+    <string name="string_thursday">星期四</string>
+    <string name="string_firday">星期五</string>
+    <string name="string_saturday">星期六</string>
+    <string name="string_sunday">星期日</string>
+    <string name="string_showstudenttitle">点名页面</string>
+    <string name="string_studentname">姓名</string>
+    <string name="string_studentnumber">学号</string>
+    <string name="string_studentclass">班级</string>
+    <string name="string_studentlater">迟到</string>
+    <string name="string_studentanswer">回答</string>
+    <string name="string_detail">支持Excel格式学生名单导入，即xls文件，文件前三列格式如下用例</string>
+
+</resources>

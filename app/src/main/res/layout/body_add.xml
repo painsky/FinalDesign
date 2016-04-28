@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgroundadd"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="课程名"
+        />
+    <EditText
+        android:textColor="@color/colorTitleWhite"
+        android:id="@+id/edittext_classname"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="教室"
+            />
+        <EditText
+            android:textColor="@color/colorTitleWhite"
+            android:id="@+id/edittext_room"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="起止周"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorTitleWhite"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="开始周"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="@color/colorTitleWhite"
+                android:inputType="number"
+                android:id="@+id/edittext_start_week"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorTitleWhite"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="结束周"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="@color/colorTitleWhite"
+                android:inputType="number"
+                android:id="@+id/edittext_end_week"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorTitleWhite"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="单/双周"
+            />
+       <RadioGroup
+           android:textColor="@color/colorTitleWhite"
+           android:id="@+id/radiogroup"
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="0dp"
+           android:layout_weight="3"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:textColor="@color/colorTitleWhite"
+               android:id="@+id/rd_all"
+               android:checked="true"
+               android:layout_width="wrap_content"
+               android:text="全周"
+               android:layout_height="wrap_content" />
+           <RadioButton
+               android:textColor="@color/colorTitleWhite"
+               android:id="@+id/rd_single"
+               android:layout_width="wrap_content"
+               android:text="单周"
+               android:layout_height="wrap_content"/>
+           <RadioButton
+               android:textColor="@color/colorTitleWhite"
+               android:id="@+id/rd_double"
+               android:layout_width="wrap_content"
+               android:text="双周"
+               android:layout_height="wrap_content"/>
+       </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:textSize="25sp"
+        android:background="@color/colorstudentgreen"
+        android:textColor="@color/colorTitleWhite"
+        android:id="@+id/button_save"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="存储"
+        />
+</LinearLayout>
