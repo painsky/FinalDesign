@@ -4,10 +4,6 @@ import org.xutils.DbManager;
 import org.xutils.db.annotation.Column;
 import org.xutils.db.annotation.Table;
 import org.xutils.ex.DbException;
-
-/**
- * Created by pain on 2016/3/28.
- */
 @Table(name="studentall")
 public class Studentbean {
     @Column(name="studentclassid",isId = true,autoGen = true)
@@ -22,8 +18,17 @@ public class Studentbean {
     private int studentlatertimes=0;
     @Column(name="studentanswertimes")
     private int studentanswertimes=0;
+    @Column(name="studentabsenttimes")
+    private int studentabsenttimes=0;
+    @Column(name="studentlaterdetail")
+    private String studentlaterdetail="";
+    @Column(name="studentanswerdetail")
+    private String studentanswerdetail="";
+    @Column(name="studentabsentdetail")
+    private String studentabsentdetail="";
     @Column(name="parent")
     private int parentid;
+
 
     public Classbean getParent(DbManager db) throws DbException {
         return db.findById(Classbean.class, parentid);
@@ -74,5 +79,37 @@ public class Studentbean {
 
     public void setStudentanswertimes(int studentanswertimes) {
         this.studentanswertimes = studentanswertimes;
+    }
+
+    public String getStudentabsentdetail() {
+        return studentabsentdetail;
+    }
+
+    public void setStudentabsentdetail(String studentabsentdetail) {
+        this.studentabsentdetail = studentabsentdetail;
+    }
+
+    public int getStudentabsenttimes() {
+        return studentabsenttimes;
+    }
+
+    public void setStudentabsenttimes(int studentabsenttimes) {
+        this.studentabsenttimes = studentabsenttimes;
+    }
+
+    public String getStudentlaterdetail() {
+        return studentlaterdetail;
+    }
+
+    public void setStudentlaterdetail(String studentlaterdetail) {
+        this.studentlaterdetail = studentlaterdetail;
+    }
+
+    public String getStudentanswerdetail() {
+        return studentanswerdetail;
+    }
+
+    public void setStudentanswerdetail(String studentanswerdetail) {
+        this.studentanswerdetail = studentanswerdetail;
     }
 }
