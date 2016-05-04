@@ -155,11 +155,19 @@ public class MainActivity extends Activity {
                     case 0:
                        break;
                     case 1:
-                      Constants.studentbean.setStudentlatertimes(Constants.studentbean.getStudentlatertimes()+1);
+                      Constants.studentbean.setStudentlatertimes(Constants.studentbean.getStudentabsenttimes()+1);
+                        String temp=Constants.findClassBean.getTimeid()+"";
+                        temp="第"+Constants.weekflag+"周周"+temp.substring(0,1)+"第"+temp.substring(1)+"节"+";";
+                        temp=Constants.studentbean.getStudentabsentdetail()+temp;
+                        Constants.studentbean.setStudentabsentdetail(Constants.studentbean.getStudentabsentdetail() + temp);
                         ClassDao.save(Constants.studentbean);
                         break;
                     case 2:
-                        Constants.studentbean.setStudentanswertimes(Constants.studentbean.getStudentanswertimes() + 1);
+                        Constants.studentbean.setStudentanswertimes(Constants.studentbean.getStudentanswertimes()+1);
+                        String temp1=Constants.findClassBean.getTimeid()+"";
+                        temp1="第"+Constants.weekflag+"周周"+temp1.substring(0,1)+"第"+temp1.substring(1)+"节"+";";
+                        temp1=Constants.studentbean.getStudentanswerdetail()+temp1;
+                        Constants.studentbean.setStudentanswerdetail(Constants.studentbean.getStudentanswerdetail() + temp1);
                         ClassDao.save(Constants.studentbean);
                         break;
                 }

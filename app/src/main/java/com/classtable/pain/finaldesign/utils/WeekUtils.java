@@ -14,6 +14,7 @@ public class WeekUtils {
     public static void getWeekday(){
         Calendar calendar=Calendar.getInstance();
         Constants.weekdayflag = calendar.get(Calendar.DAY_OF_WEEK);
+
         }
 
 }

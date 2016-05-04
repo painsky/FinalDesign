@@ -48,6 +48,7 @@ public class StudentAdapter extends BaseAdapter {
             viewHolder.textViewClass= (TextView) convertView.findViewById(R.id.textview_studentclass);
             viewHolder.textViewLater= (TextView) convertView.findViewById(R.id.textview_studentlater);
             viewHolder.textViewAnswer= (TextView) convertView.findViewById(R.id.textview_studentanswer);
+            viewHolder.textViewAbsent= (TextView) convertView.findViewById(R.id.textview_studentabsent);
             convertView.setTag(viewHolder);
         }else {
             viewHolder= (ViewHolder) convertView.getTag();
@@ -57,11 +58,16 @@ public class StudentAdapter extends BaseAdapter {
         viewHolder.textViewClass.setText(studentbean.getStudentclass()+"");
         viewHolder.textViewLater.setText(studentbean.getStudentlatertimes()+"");
         viewHolder.textViewAnswer.setText(studentbean.getStudentanswertimes() + "");
+        viewHolder.textViewAbsent.setText(studentbean.getStudentabsenttimes()+"");
         viewHolder.textViewLater.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int a = studentbean.getStudentlatertimes() + 1;
                 studentbean.setStudentlatertimes(a);
+                String temp=Constants.findClassBean.getTimeid()+"";
+                temp="第"+Constants.weekflag+"周周"+temp.substring(0,1)+"第"+temp.substring(1)+"节"+";";
+                temp=studentbean.getStudentlaterdetail()+temp;
+                studentbean.setStudentlaterdetail(temp);
                 ClassDao.save(studentbean);
                 notifyDataSetChanged();
             }
@@ -70,12 +76,17 @@ public class StudentAdapter extends BaseAdapter {
             @Override
             public boolean onLongClick(View v) {
                 int a = studentbean.getStudentlatertimes() - 1;
+                String temp="";
                 if (a < 0) {
                     a = 0;
+                }else {
+                    temp=studentbean.getStudentlaterdetail();
+                    temp=temp.substring(0,temp.length()-9);
+                    studentbean.setStudentlaterdetail(temp);
+                    studentbean.setStudentlatertimes(a);
+                    ClassDao.save(studentbean);
+                    notifyDataSetChanged();
                 }
-                studentbean.setStudentlatertimes(a);
-                ClassDao.save(studentbean);
-                notifyDataSetChanged();
                 return true;
             }
         });
@@ -84,6 +95,10 @@ public class StudentAdapter extends BaseAdapter {
             public void onClick(View v) {
                 int a = studentbean.getStudentanswertimes() + 1;
                 studentbean.setStudentanswertimes(a);
+                String temp=Constants.findClassBean.getTimeid()+"";
+                temp="第"+Constants.weekflag+"周周"+temp.substring(0,1)+"第"+temp.substring(1)+"节"+";";
+                temp=studentbean.getStudentanswerdetail()+temp;
+                studentbean.setStudentanswerdetail(temp);
                 ClassDao.save(studentbean);
                 notifyDataSetChanged();
             }
@@ -91,13 +106,49 @@ public class StudentAdapter extends BaseAdapter {
         viewHolder.textViewAnswer.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                int a = studentbean.getStudentanswertimes()- 1;
+                int a = studentbean.getStudentanswertimes() - 1;
+                String temp="";
                 if (a < 0) {
                     a = 0;
+                }else {
+                    temp=studentbean.getStudentanswerdetail();
+                    temp=temp.substring(0,temp.length()-9);
+                    studentbean.setStudentanswerdetail(temp);
+                    studentbean.setStudentanswertimes(a);
+                    ClassDao.save(studentbean);
+                    notifyDataSetChanged();
                 }
-                studentbean.setStudentanswertimes(a);
+                return true;
+            }
+        });
+        viewHolder.textViewAbsent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = studentbean.getStudentabsenttimes() + 1;
+                studentbean.setStudentabsenttimes(a);
+                String temp=Constants.findClassBean.getTimeid()+"";
+                temp="第"+Constants.weekflag+"周周"+temp.substring(0,1)+"第"+temp.substring(1)+"节"+";";
+                temp=studentbean.getStudentabsentdetail()+temp;
+                studentbean.setStudentabsentdetail(temp);
                 ClassDao.save(studentbean);
                 notifyDataSetChanged();
+            }
+        });
+        viewHolder.textViewAbsent.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                int a = studentbean.getStudentabsenttimes() - 1;
+                String temp="";
+                if (a < 0) {
+                    a = 0;
+                }else {
+                    temp=studentbean.getStudentabsentdetail();
+                    temp=temp.substring(0,temp.length()-9);
+                    studentbean.setStudentabsentdetail(temp);
+                    studentbean.setStudentabsenttimes(a);
+                    ClassDao.save(studentbean);
+                    notifyDataSetChanged();
+                }
                 return true;
             }
         });
@@ -116,5 +167,6 @@ class ViewHolder{
     TextView textViewClass;
     TextView textViewLater;
     TextView textViewAnswer;
+    TextView textViewAbsent;
 
 }

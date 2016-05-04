@@ -77,12 +77,20 @@ public class ShowStudentActivity extends Activity {
             sheet.addCell(new Label(2,0,"班级"));
             sheet.addCell(new Label(3,0,"迟到"));
             sheet.addCell(new Label(4, 0, "回答"));
+            sheet.addCell(new Label(5, 0, "旷课"));
+            sheet.addCell(new Label(6, 0, "迟到详情"));
+            sheet.addCell(new Label(7, 0, "回答详情"));
+            sheet.addCell(new Label(8, 0, "旷课详情"));
             for(Studentbean studentbean: Constants.studentbeans){
                 sheet.addCell(new Label(0,i,studentbean.getStudentnumber()));
                 sheet.addCell(new Label(1,i,studentbean.getStudentname()));
                 sheet.addCell(new Label(2,i,studentbean.getStudentclass()));
                 sheet.addCell(new Label(3,i,studentbean.getStudentlatertimes()+""));
                 sheet.addCell(new Label(4,i,studentbean.getStudentanswertimes()+""));
+                sheet.addCell(new Label(5,i,studentbean.getStudentabsenttimes()+""));
+                sheet.addCell(new Label(6,i,studentbean.getStudentlaterdetail()+""));
+                sheet.addCell(new Label(7,i,studentbean.getStudentanswerdetail()+""));
+                sheet.addCell(new Label(8,i,studentbean.getStudentabsentdetail()+""));
                 i++;
             }
             toast=temp;

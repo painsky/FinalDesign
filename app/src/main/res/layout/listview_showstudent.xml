@@ -6,7 +6,7 @@
     <TextView
         android:id="@+id/textview_studentnumber"
         android:textColor="@color/colorTitleWhite"
-        android:textSize="12sp"
+        android:textSize="10sp"
         android:gravity="center"
         android:layout_weight="1"
         android:layout_width="0dp"
@@ -34,6 +34,13 @@
         android:layout_height="match_parent" />
     <TextView
         android:id="@+id/textview_studentanswer"
+        android:textColor="@color/colorTitleWhite"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textview_studentabsent"
         android:textColor="@color/colorTitleWhite"
         android:gravity="center"
         android:layout_weight="1"
