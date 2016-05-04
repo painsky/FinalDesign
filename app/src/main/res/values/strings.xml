@@ -24,6 +24,7 @@
     <string name="string_studentclass">班级</string>
     <string name="string_studentlater">迟到</string>
     <string name="string_studentanswer">回答</string>
+    <string name="string_studentabsent">旷课</string>
     <string name="string_detail">支持Excel格式学生名单导入，即xls文件，文件前三列格式如下用例</string>
 
 </resources>

@@ -44,11 +44,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="@string/string_studentanswer"
+            android:text="@string/string_studentanswer"
+            android:textColor="@color/colorTitleWhite"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@color/colorRed"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/string_studentabsent"
                 android:textColor="@color/colorTitleWhite"
                 android:textSize="30sp"
                 android:gravity="center"
-                android:background="@color/colorRed"
+                android:background="@color/colorgrey"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
